@@ -75,3 +75,7 @@ You have probably got outdated driver binaries, by default they are not overwrit
 
 - `mvn clean verify -Doverwrite.binaries=true`
 - Delete the `selenium_standalone_binaries` folder in your resources directory
+
+
+### Remote saucelabs test farm
+mvn integration-test -Dbrowser=chrome -Dheadless=false -Dremote=true -DseleniumGridURL=http://{username}:{accessKey}@ondemand.saucelabs.com:80/wd/hub -Dplatform=xp -Dbrowser=chrome
